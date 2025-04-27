@@ -20,8 +20,8 @@ A modern, customizable Snake game built with HTML, CSS, and JavaScript.
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/enocben/snack-game/main/screenshoot/1.png" alt="screenshot 1" width="350"/>
-<img src="https://raw.githubusercontent.com/enocben/snack-game/main/screenshoot/2.png" alt="screenshot 2" width="350"/>
+<img src="https://raw.githubusercontent.com/enocben/snack-game/main/screenshoot/1.png" alt="screenshot 1" width="500"/>
+<img src="https://raw.githubusercontent.com/enocben/snack-game/main/screenshoot/2.png" alt="screenshot 2" width="500"/>
 
 ## Credits
 - Made by [Your Name]
