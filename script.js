@@ -12,6 +12,21 @@ let gameInterval = null;
 let isRunning = false;
 let isPaused = false;
 
+// Level management
+const LEVELS = {
+    easy: 120,
+    medium: 90,
+    hard: 60
+};
+let currentLevel = 'medium';
+let currentSpeed = LEVELS[currentLevel];
+
+const levelSelect = document.getElementById('level-select');
+levelSelect.addEventListener('change', function() {
+    currentLevel = this.value;
+    currentSpeed = LEVELS[currentLevel];
+});
+
 // Confetti effect amélioré
 function confettiBurst(x, y) {
     const confettiCount = 32;
@@ -184,7 +199,7 @@ function startGame() {
     clearInterval(gameInterval);
     gameInterval = setInterval(() => {
         draw();
-    }, 100);
+    }, currentSpeed);
 }
 
 function resetGame() {
