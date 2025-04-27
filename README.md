@@ -8,7 +8,6 @@ A modern, customizable Snake game built with HTML, CSS, and JavaScript.
 - Confetti effect when eating food
 - Gradient snake body
 - Pause mode (snake and food remain visible)
-- Responsive and user-friendly UI
 
 ## How to Play
 1. Open `index.html` in your web browser.
@@ -24,7 +23,7 @@ A modern, customizable Snake game built with HTML, CSS, and JavaScript.
 <img src="https://raw.githubusercontent.com/enocben/snack-game/main/screenshoot/2.png" alt="screenshot 2" width="500"/>
 
 ## Credits
-- Made by [Your Name]
+- Made by Enoc Ben
 - Inspired by the classic Snake game
 
 ## License
