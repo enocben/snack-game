@@ -11,6 +11,21 @@ body {
 .container {
     text-align: center;
 }
+#level-select-wrapper {
+    margin-bottom: 12px;
+}
+#level-select {
+    font-size: 1em;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid #4caf50;
+    background: #222;
+    color: #fff;
+    outline: none;
+}
+#level-select:focus {
+    border-color: #e91e63;
+}
 #gameCanvas {
     background: #111;
     border: 2px solid #4caf50;
