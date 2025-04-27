@@ -7,7 +7,7 @@ const canvasSize = 400;
 let snake = [{ x: 8 * box, y: 10 * box }];
 let direction = 'RIGHT';
 let food = randomFood();
-let score = 0;
+let score = 20;
 let gameInterval = null;
 let isRunning = false;
 let isPaused = false;
@@ -93,17 +93,8 @@ function draw() {
         ctx.restore();
         return;
     }
-    if (isPaused) {
-        ctx.save();
-        ctx.fillStyle = '#fff';
-        ctx.font = 'bold 32px Arial';
-        ctx.textAlign = 'center';
-        ctx.fillText('Pause', canvas.width/2, canvas.height/2);
-        ctx.restore();
-        return;
-    }
 
-    // Draw snake avec dégradé
+    // Toujours dessiner le serpent et la nourriture
     for (let i = 0; i < snake.length; i++) {
         if (i === 0) {
             ctx.fillStyle = '#4caf50'; // Tête
@@ -118,9 +109,13 @@ function draw() {
         ctx.fillRect(snake[i].x, snake[i].y, box, box);
     }
 
-    // Draw food
     ctx.fillStyle = '#e91e63';
     ctx.fillRect(food.x, food.y, box, box);
+
+    // Si pause, on arrête là (pas de déplacement)
+    if (isPaused) {
+        return;
+    }
 
     // Move snake
     let head = { ...snake[0] };
