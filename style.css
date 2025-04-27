@@ -1,0 +1,36 @@
+body {
+    background: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+}
+#gameCanvas {
+    background: #111;
+    border: 2px solid #4caf50;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+#score {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+#restartBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#restartBtn:hover {
+    background: #388e3c;
+}
